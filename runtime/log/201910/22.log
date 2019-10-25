@@ -1,0 +1,92 @@
+---------------------------------------------------------------
+[ 2019-10-22T07:48:06+08:00 ] 115.206.182.123 GET /kudoxi/public/kudoxi/vocabulary/vocabulary/lid/6.html
+[ info ] www.kudoxi.com/kudoxi/public/kudoxi/vocabulary/vocabulary/lid/6.html [运行时间：0.076271s][吞吐率：13.11req/s] [内存消耗：5,230.21kb] [文件加载：85]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000039s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002990s ]
+[ info ] [ LANG ] /data3/htdocs/hanshoushou.host.smartgslb.com/kudoxi/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'kudoxi',
+    1 => 'vocabulary',
+    2 => 'vocabulary',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.kudoxi.com',
+  'x-forwarded-host' => 'www.kudoxi.com',
+  'x-forwarded-server' => 'www.kudoxi.com',
+  'x-forwarded-for' => '115.206.182.123, 103.27.186.4, 103.27.186.4',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=3uampc1mg5is0hmemcfeqe98l4; antispame=1571708885; antispamkey=1d1f0c72fa0c845d8ee0d9dac3321308',
+  'kerid' => '11644',
+  'via' => '1.1 tyo2.jp.smartgslb.com (squid/3.4.9)',
+  'surrogate-capability' => 'tyo2.jp.smartgslb.com="Surrogate/1.0"',
+  'cache-control' => 'max-age=259200',
+)
+[ info ] [ PARAM ] array (
+  'lid' => '6',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000758s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [1045]SQLSTATE[HY000] [1045] Access denied for user 'nobody'@'localhost' (using password: YES)[/data3/htdocs/hanshoushou.host.smartgslb.com/kudoxi/thinkphp/library/think/db/Connection.php:293]
+---------------------------------------------------------------
+[ 2019-10-22T07:52:01+08:00 ] 115.206.182.123 GET /kudoxi/public/kudoxi/vocabulary/vocabulary/lid/6.html
+[ info ] www.kudoxi.com/kudoxi/public/kudoxi/vocabulary/vocabulary/lid/6.html [运行时间：0.047471s][吞吐率：21.07req/s] [内存消耗：5,229.98kb] [文件加载：85]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000022s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001687s ]
+[ info ] [ LANG ] /data3/htdocs/hanshoushou.host.smartgslb.com/kudoxi/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'kudoxi',
+    1 => 'vocabulary',
+    2 => 'vocabulary',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.kudoxi.com',
+  'x-forwarded-host' => 'www.kudoxi.com',
+  'x-forwarded-server' => 'www.kudoxi.com',
+  'x-forwarded-for' => '115.206.182.123, 103.27.186.4, 103.27.186.4',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=3uampc1mg5is0hmemcfeqe98l4; antispame=1571708886; antispamkey=0a19008650042caa3cbc1e7b48976898',
+  'kerid' => '11644',
+  'via' => '1.1 tyo2.jp.smartgslb.com (squid/3.4.9)',
+  'surrogate-capability' => 'tyo2.jp.smartgslb.com="Surrogate/1.0"',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+  'lid' => '6',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000404s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [1045]SQLSTATE[HY000] [1045] Access denied for user 'nobody'@'localhost' (using password: YES)[/data3/htdocs/hanshoushou.host.smartgslb.com/kudoxi/thinkphp/library/think/db/Connection.php:293]
