@@ -12,17 +12,23 @@ class Vocabulary extends Base
     }
     public function vocabulary(){
     	$lid = input('lid');
+		$name = $this->request->get('name');
+		$lid2 = $this->request->get('lid');
+		$lid = $lid ? $lid : $lid2;
     	//默认是冰岛语
     	$moren_lid['id'] = 0;
-    	$moren_lid['name'] = "冰岛语";
+    	$moren_lid['name'] = "Iceland";
     	$moren_lid = Db::name("language")->where("is_shenpi",1)->order("id asc")->find();
     	$lid = $lid ? $lid : $moren_lid['id'];
     	$moren_lid2 = Db::name("language")->where("id = $lid and is_shenpi = 1")->find();
     	$moren = !empty($moren_lid2) ? $moren_lid2['name'] : $moren_lid['name'];
-    	$where = array();
     	$list = array();
     	if($lid){
-    		$list = model("vocabulary")->where("language",$lid)->order("zan DESC,id DESC")->paginate(20);
+			$where = "language = $lid";
+			if($name != ''){
+				$where .= " and ( name like '%" . $name . "%' or remark like '%" . $name . "%')";
+			}
+    		$list = model("vocabulary")->where($where)->order("zan DESC,id DESC")->paginate(20);
     		//计算点赞量
     		foreach($list as $k => $v){
     			$id = $v['id'];
@@ -37,6 +43,9 @@ class Vocabulary extends Base
     			}
     		}
     	}
+		
+    	$this->view->assign("name",$name);
+    	$this->view->assign("lid",$lid);
     	$this->view->assign("language",$moren);
     	$this->view->assign("list",$list);
     	return $this->view->fetch();

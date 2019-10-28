@@ -20,11 +20,11 @@ return [
     // 数据库名
     'database'        => Env::get('database.database', 'sql_hanshoushou'),
     // 用户名
-    'username'        => Env::get('database.username', 'sql_hanshoushou'),
+    'username'        => Env::get('database.username', 'root'),
     // 密码
     'password'        => Env::get('database.password', 'root'),
     // 端口
-    'hostport'        => Env::get('database.hostport', ''),
+    'hostport'        => Env::get('database.hostport', '3307'),
     // 连接dsn
     'dsn'             => '',
     // 数据库连接参数
